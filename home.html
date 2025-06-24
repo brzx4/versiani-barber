@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Versiani Barber - Início</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bem-vindo à Versiani Barber</h1>
+    <p style="margin-bottom: 16px; text-align: center;">Escolha uma opção para continuar:</p>
+
+    <div class="home-options">
+      <button id="cliente">Sou Cliente</button>
+      <button id="admin">Sou Administrador</button>
+    </div>
+
+    <div id="senha-container" style="display:none; margin-top: 25px;">
+      <input type="password" id="senha" placeholder="Digite a senha de administrador">
+      <button id="entrar-admin">Entrar</button>
+      <p id="erro-senha" style="color:red; display:none;">Senha incorreta!</p>
+    </div>
+  </div>
+
+  <script src="js/home.js"></script>
+</body>
+</html>

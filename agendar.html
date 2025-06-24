@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Versiani Barber - Agendar</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Agendar Serviço</h1>
+    <form id="form-agendamento">
+      <label for="servico">Serviço:</label>
+      <select id="servico" required>
+        <option value="" disabled selected>Selecione um serviço</option>
+        <option value="Corte">Corte - R$20</option>
+        <option value="Barba">Barba - R$15</option>
+        <option value="Sombrancelha">Sombrancelha - R$5</option>
+        <option value="Corte + Sombrancelha">Corte + Sombrancelha - R$25</option>
+        <option value="Corte + Barba">Corte + Barba - R$35</option>
+      </select>
+
+      <label for="data">Data:</label>
+      <input type="date" id="data" required min="" />
+
+      <label for="hora">Hora:</label>
+      <select id="hora" required></select>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required />
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" required maxlength="15" placeholder="(XX) XXXXX-XXXX" />
+
+      <button type="submit">Confirmar Agendamento</button>
+    </form>
+    <div id="mensagem-confirmacao"></div>
+  </div>
+
+  <script src="js/agendar.js"></script>
+</body>
+</html>
