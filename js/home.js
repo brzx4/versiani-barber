@@ -1,5 +1,5 @@
 document.getElementById('cliente').addEventListener('click', () => {
-  window.location.href = 'index.html';
+  window.location.href = 'home.html';
 });
 
 document.getElementById('admin').addEventListener('click', () => {
